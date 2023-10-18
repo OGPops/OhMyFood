@@ -16,25 +16,25 @@ body {
 }
 
 .menu {
-    &__title{
+    &_title{
         font-family: 'Shrikhand', sans-serif;
         font-size: 1.7rem;
         font-weight: 200;
     }
-    &__subtitle{
+    &_subtitle{
        font-weight: 300; 
        font-size: 1rem;
        text-transform: uppercase;
     }
-    &__sub-subtitle{
+    &_sub-subtitle{
         font-size: 1rem;
         line-height: 1.7;
         font-weight: 600;
     }
-    &__txt{
+    &_txt{
         font-size: 0.9rem;
     }
-    &__price{
+    &_price{
         font-weight: 600;
     }
 
