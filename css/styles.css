@@ -23,14 +23,6 @@
     font-size: 1.8rem;
   }
 
-  .fa-heart:hover .fa-heart--bg {
-    transform: scale(0.87);
-    color: transparent;
-    background: linear-gradient(180deg, #ff7ad9, #9256dc 140%);
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-
   body {
     font-family: "Roboto", sans-serif;
   }
@@ -362,6 +354,11 @@
     height: 70%;
   }
 
+  .restaurants_img-high {
+    object-fit: cover;
+    object-position: center -9.375rem;
+  }
+
   .restaurants_badge {
     position: absolute;
     top: 0.625rem;
@@ -395,6 +392,24 @@
     background: linear-gradient(180deg, #ff7ad9, #9256dc 140%);
     -webkit-background-clip: text;
     background-clip: text;
+  }
+
+  .footer {
+    background-color: #353535;
+    color: white;
+    padding-top: 1.25rem;
+  }
+
+  .footer_logo {
+    font-weight: 200;
+  }
+
+  .footer_list {
+    padding: 1.25rem;
+  }
+
+  .footer_link {
+    color: white;
   }
 
   @media screen and (min-width: 1024px) {
@@ -441,3 +456,60 @@
       width: 100%;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .operation {
+      width: 90%;
+      margin: auto;
+    }
+
+    .restaurants_title {
+      width: 90%;
+      margin: auto;
+    }
+
+    .restaurants_container {
+      width: 80%;
+      margin: auto;
+    }
+
+    .restaurants_img-high {
+      object-position: center;
+    }
+
+    .menu-card {
+      width: 90%;
+    }
+
+    .menu-card_header {
+      width: 90%;
+      margin: auto;
+    }
+
+    .menu-card_subcontainer {
+      width: 80%;
+      margin: auto;
+    }
+
+    .footer_list {
+      text-align: center;
+    }
+
+    .footer_logo {
+      text-align: center;
+      margin-left: -1.4375rem;
+    }
+
+  }
+
+@media screen and (min-width: 500px) {
+  .restaurants_info-container {
+    height: 18.75rem;
+  }
+  
+}
