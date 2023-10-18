@@ -1,0 +1,28 @@
+.research{
+    &_form{
+        width:100%;
+        background-color: $color-bg;
+        box-shadow: $shawdow-rechearch;
+        text-align: center;
+    }
+    &_input{
+        border: none;
+        background-color: $color-bg;
+        width:150px;
+    }
+    &_icon{
+       font-size: 1.3rem;
+       padding: $padding;
+    }
+    &_description{
+        background: $color-bg-light;
+        padding: 2*$padding 0 3*$padding 0;
+        text-align: center;
+       & p{
+          color: $color-description; 
+          padding: $padding 0;
+       }
+      
+    }   
+  
+}
