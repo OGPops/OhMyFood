@@ -1,4 +1,3 @@
-/*** Fais à la main au lieu de compiler le scss
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +35,7 @@
     font-family: "Roboto", sans-serif;
   }
 
+  
   .header {
     height: 5rem;
     display: grid;
@@ -44,39 +44,39 @@
     justify-items: center;
   }
 
-  .header-arrow {
+  .header_arrow {
     font-size: 1.5rem;
   }
 
-  .header__logo {
+  .header_logo {
     grid-column-start: 2;
   }
 
-  .research {
+  .research_form {
     width: 100%;
     background-color: #f2f2f2f1;
     box-shadow: inset 0px 2px 5px 0px #b9b3b3;
     text-align: center;
   }
 
-  .research-input {
+  .research_input {
     border: none;
     background-color: #f2f2f2f1;
     width: 150px;
   }
 
-  .research-icon {
+  .research_icon {
     font-size: 1.3rem;
     padding: 1.25rem;
   }
 
-  .research-description {
+  .research_description {
     background: #f6f6f6;
     padding: 2.5rem 0 3.75rem 0;
     text-align: center;
   }
 
-  .research-description p {
+  .research_description p {
     color: #8a8a8a;
     padding: 1.25rem 0;
   }
@@ -86,7 +86,7 @@
     padding: 2.5rem 1.25rem;
   }
 
-  .operation-list {
+  .operation_list {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 0.5rem;
@@ -94,7 +94,7 @@
     counter-reset: compteur;
   }
 
-  .operation-step {
+  .operation_step {
     width: 100%;
     padding: 1.875rem 0;
     background: #f6f6f6;
@@ -105,7 +105,7 @@
     counter-increment: compteur;
   }
 
-  .operation-step::before {
+  .operation_step::before {
     margin-left: -0.625rem;
     content: " " counter(compteur);
     background: #9256dc;
@@ -116,20 +116,20 @@
     font-size: 0.8rem;
   }
 
-  .operation-step .fas {
+  .operation_step .fas {
     color: #787575;
     padding: 0 1rem;
   }
 
-  .operation-step:hover {
+  .operation_step:hover {
     background-color: #f5edff;
   }
 
-  .operation-step:hover .fas {
+  .operation_step:hover .fas {
     color: #9256dc;
   }
 
-  .research__input {
+  .research_input {
     font-size: 1.2rem;
   }
 
@@ -138,12 +138,12 @@
     font-size: 1.4rem;
   }
 
-  .footer-logo {
+  .footer_logo {
     font-family: "Shrikhand", sans-serif;
     font-weight: 200;
   }
 
-  .menu {
+  .menu-card {
     background-color: #f6f6f6;
     border-radius: 3.125rem 3.125rem 0 0;
     padding: 2.875rem 1.25rem;
@@ -152,44 +152,44 @@
     z-index: 1;
   }
 
-  .menu-header {
+  .menu-card_header {
     display: grid;
     grid-template-columns: 1fr 5rem;
   }
 
-  .menu-img {
+  .menu-card_img {
     width: 100%;
     object-fit: cover;
     max-height: 300px;
   }
 
-  .menu-container {
+  .menu-card_container {
     display: grid;
   }
 
-  .menu-title {
+  .menu-card_title {
     font-family: "Shrikhand", sans-serif;
     font-size: 1.7rem;
     font-weight: 200;
   }
 
-  .menu-card .title {
+  .menu-card_subtitle {
     font-weight: 300;
     font-size: 1rem;
     text-transform: uppercase;
   }
 
-  .menu-card .subtitle {
+  .menu-card_sub-subtitle {
     font-size: 1rem;
     line-height: 1.7;
     font-weight: 600;
   }
 
-  .menu-card .txt {
+  .menu-card_txt {
     font-size: 0.9rem;
   }
 
-  .menu-card-price {
+  .menu-card_price {
     font-weight: 600;
   }
 
@@ -201,7 +201,18 @@
     justify-self: center;
   }
 
-  .menu-card_icon:hover {
+  .menu-card_icon .restaurant__icon--bg {
+  position: absolute;
+  text-align: center;
+  font-weight: 600;
+  right: 0;
+  color: transparent;
+  font-size: 1.8rem;
+  transform: scale(0);
+  transition: all 100ms linear;
+}
+
+  .menu-card_icon:hover .menu-card_icon--bg {
     transform: scale(0.87);
     color: transparent;
     background: linear-gradient(180deg, #ff7ad9, #9256dc 140%);
@@ -209,7 +220,7 @@
     background-clip: text;
   }
 
-  .menu-subcontainer {
+  .menu-card_subcontainer {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: min-content;
@@ -217,7 +228,7 @@
     padding-top: 2.5rem;
   }
 
-  .menu-card-container {
+  .menu-card_info-container {
     display: flex;
     background-color: white;
     border-radius: 1rem;
@@ -226,31 +237,40 @@
     animation: cards 0.5s 1 both;
   }
 
-  .menu-card-title {
+  .menu-card_info-container:hover .menu-card_check {
+  margin-right: 0;
+  width: 60px;
+ }
+
+ .menu-card_info-container:hover .menu-card_container-icon-check {
+  transform: rotate(0deg);
+ }
+
+  .menu-card_subtitle {
     width: 2.375rem;
     padding-bottom: 0.3125rem;
     border-bottom: solid 3px #99E2D0;
   }
 
-  .menu-card-info {
+  .menu-card_info {
     padding: 0.625rem;
     flex: 1;
     overflow: hidden;
   }
 
-  .menu-card-subtitle {
+  .menu-card_sub-subtitle {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
   }
 
-  .menu-card-txt {
+  .menu-card_txt {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
   }
 
-  .menu-card-price {
+  .menu-card_price {
     align-self: end;
     padding: 0.625rem 1.25rem;
   }
@@ -292,14 +312,14 @@
     transition: opacity, 200ms, linear;
   }
 
-  .menu-card__btn-container {
+  .menu-card_btn-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 2.875rem;
   }
 
-  .menu-card__btn {
+  .menu-card_btn {
     padding: 1rem 2.875rem;
   }
 
@@ -313,19 +333,19 @@
     padding: 3.75rem 1.25rem;
   }
 
-  .restaurants-title {
+  .restaurants_title {
     max-width: 87.5rem;
     padding-bottom: 1.25rem;
   }
 
-  .restaurants-container {
+  .restaurants_container {
     max-width: 87.5rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 1.5rem;
   }
 
-  .restaurants-info-container {
+  .restaurants_info-container {
     background-color: white;
     border-radius: 1rem;
     display: flex;
@@ -334,7 +354,7 @@
     position: relative;
   }
 
-  .restaurants-img {
+  .restaurants_img {
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
     object-position: center bottom;
@@ -342,7 +362,7 @@
     height: 70%;
   }
 
-  .restaurants-badge {
+  .restaurants_badge {
     position: absolute;
     top: 0.625rem;
     right: 0.625rem;
@@ -352,24 +372,24 @@
     color: #278870;
   }
 
-  .restaurants-info {
+  .restaurants_info {
     width: 100%;
     padding: 1.25rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
 
-  .restaurants-info p {
+  .restaurants_info p {
     line-height: 1.7;
   }
 
-  .restaurants-icon {
+  .restaurants_icon {
     position: relative;
     justify-self: end;
     font-size: 1.8rem;
   }
 
-  .restaurants-icon:hover {
+  .restaurants_icon:hover {
     transform: scale(0.87);
     color: transparent;
     background: linear-gradient(180deg, #ff7ad9, #9256dc 140%);
@@ -382,7 +402,7 @@
       width: 100%;
     }
 
-    .header-arrow {
+    .header_arrow {
       font-size: 2rem;
       justify-self: start;
       padding-left: 2rem;
@@ -393,17 +413,17 @@
       margin: auto;
     }
 
-    .operation-list {
+    .operation_list {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 2rem;
     }
 
-    .restaurants-title {
+    .restaurants_title {
       width: 90%;
     }
 
-    .restaurants-container {
+    .restaurants_container {
       width: 90%;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -415,10 +435,9 @@
       max-width: 87.5rem;
     }
 
-    .menu-card-container {
+    .menu-card_container {
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 2.5rem;
       width: 100%;
     }
   }
-***/
