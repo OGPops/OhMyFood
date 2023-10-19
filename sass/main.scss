@@ -1,7 +1,7 @@
 // outils
 @import "./utils/variables";
 @import "./utils/mixins";
-@import "./utils/lists";
+@import "./utils/list";
 @import "./utils/maps";
 @import "./utils/fonctions";
 
@@ -10,7 +10,6 @@
 @import "./base/typography";
 
 // composants
-@import "./components/loader";
 @import "./components/btn";
 @import "./components/heart";
 
@@ -20,6 +19,6 @@
 @import "./layout/header";
 @import "./layout/research";
 @import "./layout/operation";
-@import "./layout/restaurant";
-@import "./layout/menu-card";
+@import "./layout/restaurants";
+@import "./layout/menu";
 @import "./layout/footer";
