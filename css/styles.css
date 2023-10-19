@@ -204,7 +204,7 @@
   transition: all 100ms linear;
 }
 
-  .menu-card_icon:hover .menu-card_icon--bg {
+  .menu-card_icon:hover {
     transform: scale(0.87);
     color: transparent;
     background: linear-gradient(180deg, #ff7ad9, #9256dc 140%);
@@ -457,12 +457,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
-    body {
-      padding: 0;
-      margin: 0;
-    }
-
+  @media screen and (max-width: 768px) {
     .operation {
       width: 90%;
       margin: auto;
@@ -474,7 +469,7 @@
     }
 
     .restaurants_container {
-      width: 80%;
+      width: 90%;
       margin: auto;
     }
 
@@ -483,16 +478,16 @@
     }
 
     .menu-card {
-      width: 90%;
+      width: 100%;
     }
 
     .menu-card_header {
-      width: 90%;
+      width: 100%;
       margin: auto;
     }
 
     .menu-card_subcontainer {
-      width: 80%;
+      width: 90%;
       margin: auto;
     }
 
@@ -502,7 +497,6 @@
 
     .footer_logo {
       text-align: center;
-      margin-left: -1.4375rem;
     }
 
   }
