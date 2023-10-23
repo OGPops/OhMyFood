@@ -1,17 +1,17 @@
 // outils
-@import "./utils/variables";
-@import "./utils/mixins";
-@import "./utils/list";
-@import "./utils/maps";
-@import "./utils/fonctions";
+@import "./outils/variables";
+@import "./outils/mixins";
+@import "./outils/list";
+@import "./outils/maps";
+@import "./outils/fonctions";
 
 // base
 @import "./base/base";
 @import "./base/typography";
 
 // composants
-@import "./components/btn";
-@import "./components/heart";
+@import "./composants/btn";
+@import "./composants/heart";
 
 
 
