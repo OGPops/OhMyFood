@@ -4,23 +4,32 @@
         background-color: $color-bg;
         box-shadow: $shawdow-rechearch;
         text-align: center;
+        height: 440px;
+        margin: 25px;
     }
     &_input{
         border: none;
         background-color: $color-bg;
-        width:150px;
+        width: 150px;
+        height: 35px;
+        font-size: 16px;
+        margin-top: 5px;
+
     }
     &_icon{
        font-size: 1.3rem;
        padding: $padding;
+       color: $color-bg-footer;
     }
     &_description{
         background: $color-bg-light;
         padding: 2*$padding 0 3*$padding 0;
         text-align: center;
+        width: 375px;
+        height: 300px;
        & p{
           color: $color-description; 
-          padding: $padding 0;
+          padding: 15px 15px 25px 15px;
        }
       
     }   
