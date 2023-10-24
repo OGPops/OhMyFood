@@ -1,3 +1,10 @@
+// outils
+@import "./outils/fonctions";
+@import "./outils/list";
+@import "./outils/maps";
+@import "./outils/mixins";
+@import "./outils/variables";
+
 // base
 @import "./base/base";
 @import "./base/typography";
@@ -5,7 +12,7 @@
 // composants
 @import "./composants/heart";
 
-//layout 
+// layout 
 @import "./layout/header";
 @import "./layout/menu";
 @import "./layout/footer";
