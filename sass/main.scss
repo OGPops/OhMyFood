@@ -6,19 +6,19 @@
 @import "./outils/fonctions";
 
 // base
-@import "./base/base";
-@import "./base/typography";
+@import "./base/_base";
+@import "./base/_typography";
 
 // composants
-@import "./composants/btn";
-@import "./composants/heart";
+@import "./composants/_btn";
+@import "./composants/_heart";
 
 
 
 // layout
-@import "./layout/header";
-@import "./layout/research";
-@import "./layout/operations";
-@import "./layout/restaurants";
-@import "./layout/menu";
-@import "./layout/footer";
+@import "./layout/_header";
+@import "./layout/_research";
+@import "./layout/_operations";
+@import "./layout/_restaurants";
+@import "./layout/_menu";
+@import "./layout/_footer";
