@@ -21,7 +21,7 @@ a {
 }
 
 .fas {
-  padding-right: 0.625rem;
+  padding-right: 5px;
 }
 
 body {
@@ -33,8 +33,9 @@ body {
 }
 
 .research p {
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 18px;
 }
 
 .footer-logo {
@@ -92,7 +93,7 @@ body {
   background: linear-gradient(180deg, #ff7ad9, #9256dc 140%);
   -webkit-background-clip: text;
 }
-.fa-heart .restaurants_icon--bg {
+/*.fa-heart .restaurants_icon--bg {
   position: absolute;
   text-align: center;
   font-weight: 600;
@@ -101,7 +102,7 @@ body {
   font-size: 1.8rem;
   transform: scale(0);
   transition: all 100ms linear;
-}
+}*/
 
 .header {
   height: 63px;
@@ -116,15 +117,13 @@ body {
     padding-left: 2rem;
   }
 }
-.header_logo {
-  width: 162px;
-  position: relative;
-  left: 25%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+
 .header_title {
-  display: none;
+  font-family: "Shrikhand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
 }
 
 .research_form {
@@ -132,28 +131,27 @@ body {
   background-color: rgba(242, 242, 242, 0.9450980392);
   box-shadow: inset 0px 2px 5px 0px #b9b3b3;
   text-align: center;
-  height: 440px;
-  margin: 25px;
 }
 .research_input {
   border: none;
   background-color: rgba(242, 242, 242, 0.9450980392);
   width: 150px;
-  height: 35px;
   font-size: 16px;
-  margin-top: 5px;
 }
 .research_icon {
-  font-size: 1.3rem;
-  padding: 1.25rem;
+  font-size: 20px;
+  padding: 15px;
   color: #353535;
 }
 .research_description {
   background: #f6f6f6;
-  padding: 2.5rem 0 3.75rem 0;
+  padding: 45px 20px;
   text-align: center;
-  width: 375px;
+  width: 100%;
   height: 300px;
+}
+.research_description h1 {
+  font-family: "Roboto" sans-serif;
 }
 .research_description p {
   color: #8a8a8a;
@@ -164,20 +162,18 @@ body {
   background-color: #f6f6f6;
   border-radius: 3.125rem 3.125rem 0 0;
   padding: 2.875rem 1.25rem;
-  margin-top: -50px;
-  position: relative;
   z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .menu-card {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 1024px) {
   .menu-card {
-    max-width: 87.5rem;
+    max-width: 100%;
   }
 }
 .menu-card_img {
@@ -197,7 +193,7 @@ body {
 }
 .menu-card_header {
   display: grid;
-  grid-template-columns: 1fr 5rem;
+  grid-template-columns: 1fr 1fr;
 }
 @media screen and (min-width: 768px) {
   .menu-card_header {
@@ -339,8 +335,9 @@ body {
   }
 }
 .operation {
-  max-width: 87.5rem;
-  padding: 2.5rem 1.25rem;
+  max-width: 100%;
+  padding: 25px 25px;
+  margin-top: 350px;
 }
 @media screen and (min-width: 768px) {
   .operation {
@@ -370,10 +367,10 @@ body {
 }
 .operation_step {
   width: 100%;
-  padding: 1.875rem 0;
+  padding: 30px 0;
   background: #f6f6f6;
-  margin-bottom: 1rem;
-  border-radius: 1.5rem;
+  margin-bottom: 20px;
+  border-radius: 20px;
   box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.09);
   font-weight: 500;
   counter-increment: compteur;
@@ -392,20 +389,18 @@ body {
   color: #787575;
   padding: 0 1rem;
 }
-.operation_step:hover {
-  background-color: #f5edff;
-}
-.operation_step:hover .fas {
-  color: #9256dc;
+
+.operation_step .fa-store {
+  color: #9356dc;
 }
 
 .restaurants {
   background-color: #f6f6f6;
-  padding: 3.75rem 1.25rem;
+  padding: 45px 18px;
 }
 .restaurants_title {
-  max-width: 87.5rem;
-  padding-bottom: 1.25rem;
+  max-width: 100%;
+  padding-bottom: 15px;
 }
 @media screen and (min-width: 768px) {
   .restaurants_title {
@@ -511,10 +506,21 @@ body {
 .footer {
   background-color: #353535;
   color: white;
-  padding-top: 1.25rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
+.footer_logo {
+  font-family: "Shrikhand", serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .footer_element {
-  padding: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  padding-left: 16px;
+  padding-top: 2px;
+  font-size: 16px;
 }
 @media screen and (min-width: 768px) {
   .footer_element {
