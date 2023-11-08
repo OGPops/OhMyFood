@@ -1,5 +1,5 @@
 .operation {
-    max-width:87.5rem;
+    max-width: 100%;
     padding:2*$padding $padding;
     @include tablet{
         width: 80%;
@@ -45,11 +45,8 @@
             color: $color-icon-step;
             padding:0 0.8*$padding;
         }
-        &:hover{
-         background-color: $color-hover-step;
-         .fas{
+         .fa-store{
             color: $color-primary;
          }
         }
     }
-}

@@ -31,7 +31,7 @@
 
     &_header{
         display: grid;
-        grid-template-columns: 1fr 5rem;
+        grid-template-columns: 1fr 3rem;
         @include tablet{
             width:90%;
             margin: auto;
@@ -81,6 +81,11 @@
             transform: rotate(0deg);
         }
        
+    }
+    &_title{
+        font-family: "Shrikhand", serif;
+        font-size: 28px;
+        font-weight: 400;
     }
     &_subtitle{
         width: 2.375rem;
