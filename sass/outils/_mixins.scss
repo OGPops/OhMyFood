@@ -23,21 +23,12 @@
     position:relative;
     justify-self: end;
     font-size:1.8rem;
-    &:hover &--bg{
-        transform:scale(0.87);
-        color:transparent;
-        background: $color-gradient;
-        -webkit-background-clip: text;
-    }
-    & .restaurants_icon--bg{
-        position: absolute;
-        text-align: center;
-        font-weight: 600;
-        right:0;
+    &:hover{
         color: transparent;
-        font-size: 1.8rem;
-        transform:scale(0);
-        transition: all 100ms linear;
+        background: linear-gradient(#9256dc, #ff7ad9);
+        background-clip: text;
+        -webkit-background-clip: text;
+        cursor: pointer;
     }
 }
 
@@ -50,7 +41,7 @@
     }
 }    
 @mixin tablet-Only{
-    @media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, pre-desktop))
+    @media screen and (min-width: map-get($breakpoints, tablet))
     {
         @content;
     }
