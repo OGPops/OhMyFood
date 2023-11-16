@@ -93,23 +93,25 @@
         border-bottom: solid 3px $color-tertiary;
     }
     &_info{
-        padding: 0.5*$padding;
+        padding: 12.5px 0px 12.5px 12.5px;
         flex:1;
         overflow: hidden;
     }
     &_sub-subtitle{
+        font-size: 15px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
     }
     &_txt{
+        font-size: 13px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
     }
     &_price{
         align-self: flex-end;
-        padding: 0.5*$padding $padding;
+        padding: 12.5px 14px
     }
     &_check{
         display: flex;
