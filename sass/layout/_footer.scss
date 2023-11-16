@@ -13,6 +13,11 @@
         @include tablet{
             text-align: center;
         }
+        @include desktop{
+            display: inline-block;
+            margin-left: 100px;
+        }
+        
     }
     &_logo{
         font-family: "Shrikhand", serif;
@@ -22,6 +27,10 @@
         @include tablet{
             text-align: center;
             margin-left: -1.4375rem;
+        }
+        @include desktop{
+            text-align: end;
+            margin-right: 20px;
         }
     }
     &_link{
