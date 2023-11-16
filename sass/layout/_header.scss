@@ -1,0 +1,20 @@
+.header {
+
+
+    &_arrow{
+        padding-left: 25px;
+        font-size: 25px;
+        @include desktop{
+            font-size: 35px;
+            justify-self: start;
+            padding-left: 25px;
+        }    
+    }
+    &_title{
+        width: 162px;
+        font-family: "Shrikhand", serif;
+        margin: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
