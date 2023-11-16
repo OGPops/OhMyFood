@@ -604,6 +604,12 @@ body {
     text-align: center;
   }
 }
+@media screen and (min-width: 1024px) {
+  .footer_element {
+    display: inline-block;
+    margin-left: 100px;
+  }
+}
 .footer_logo {
   font-family: "Shrikhand", serif;
   padding-top: 2px;
@@ -614,6 +620,12 @@ body {
   .footer_logo {
     text-align: center;
     margin-left: -1.4375rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer_logo {
+    text-align: end;
+    margin-right: 20px;
   }
 }
 .footer_link {
