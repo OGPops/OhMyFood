@@ -4,8 +4,14 @@
     padding-top: $padding;
     padding-bottom: 20px;
     padding-left: 16px;
-   
-
+    @include desktop{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 40px;
+    }
+    &_list{
+        margin-right: 0px;
+    }
     &_element{   
         font-family: "Roboto", sans-serif;
         padding: 2px;
@@ -14,8 +20,9 @@
             text-align: center;
         }
         @include desktop{
-            display: inline-block;
-            align-content: end;
+            display: inline;
+            margin-right: 50px;
+            font-size: 12px;
         }
     }
     &_logo{
@@ -28,8 +35,7 @@
             margin-left: -1.4375rem;
         }
         @include desktop{
-            text-align: end;
-            margin-right: 20px;
+            font-size: 14px;
         }
     }
     &_link{

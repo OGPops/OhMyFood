@@ -1,12 +1,11 @@
 .operation {
     max-width: 100%;
-    padding:2*$padding $padding;
+    padding: 50px 25px;
     @include tablet{
-        width: 80%;
         margin:auto;
     }
     @include desktop{
-        width: 70%;
+        padding: 50px;
         margin:auto;
     }
     &_list{
