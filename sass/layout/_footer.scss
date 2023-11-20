@@ -15,9 +15,8 @@
         }
         @include desktop{
             display: inline-block;
-            margin-left: 100px;
+            align-content: end;
         }
-        
     }
     &_logo{
         font-family: "Shrikhand", serif;

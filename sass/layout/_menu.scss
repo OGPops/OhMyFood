@@ -11,7 +11,7 @@
         margin-right: auto;
     }
     @include desktop{
-        max-width: 87.5rem;
+        max-width: 50%;
     }
 
     &_img{
@@ -23,9 +23,10 @@
         display: grid;
         
         @include desktop{
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-column-gap: 2.5rem;
-            width:100%;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            justify-self: center;
         } 
     }
 
