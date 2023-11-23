@@ -201,22 +201,25 @@ body {
 }
 
 .header_arrow {
+  position: relative;
+  top: 40px;
   padding-left: 25px;
-  font-size: 25px;
+  font-size: 20px;
 }
 @media screen and (min-width: 1024px) {
   .header_arrow {
-    font-size: 35px;
-    justify-self: start;
-    padding-left: 25px;
+    display: flex;
+    font-size: 15px;
+    position: relative;
+    top: 35px;
   }
 }
 .header_title {
   width: 162px;
+  height: 65px;
   font-family: "Shrikhand", serif;
   margin: auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
 }
 
 .research_form {
@@ -280,7 +283,6 @@ body {
   .menu-card_container {
     display: flex;
     flex-direction: column;
-    width: 50%;
     justify-self: center;
   }
 }
@@ -430,17 +432,17 @@ body {
 }
 .operation {
   max-width: 100%;
-  padding: 50px 25px;
+  padding: 50px;
 }
 @media screen and (min-width: 768px) {
   .operation {
-    width: 80%;
     margin: auto;
   }
 }
 @media screen and (min-width: 1024px) {
   .operation {
-    width: 70%;
+    width: 90%;
+    padding: 25px;
     margin: auto;
   }
 }
@@ -488,7 +490,7 @@ body {
 
 .restaurants {
   background-color: #f6f6f6;
-  padding: 75px 25px;
+  padding: 75px 15px;
 }
 .restaurants_title {
   max-width: 100%;
@@ -502,7 +504,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .restaurants_title {
-    width: 70%;
+    width: 85%;
   }
 }
 .restaurants_container {
@@ -595,6 +597,16 @@ body {
   padding-bottom: 20px;
   padding-left: 16px;
 }
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 40px;
+  }
+}
+.footer_list {
+  margin-right: 0px;
+}
 .footer_element {
   font-family: "Roboto", sans-serif;
   padding: 2px;
@@ -607,8 +619,9 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .footer_element {
-    display: inline-block;
-    align-content: end;
+    display: inline;
+    margin-right: 50px;
+    font-size: 12px;
   }
 }
 .footer_logo {
@@ -625,8 +638,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .footer_logo {
-    text-align: end;
-    margin-right: 20px;
+    font-size: 14px;
   }
 }
 .footer_link {
