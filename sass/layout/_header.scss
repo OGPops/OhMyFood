@@ -2,19 +2,22 @@
 
 
     &_arrow{
+        position: relative;
+        top: 40px;
         padding-left: 25px;
-        font-size: 25px;
+        font-size: 20px;
         @include desktop{
-            font-size: 35px;
-            justify-self: start;
-            padding-left: 25px;
+            display: flex;
+            font-size: 15px;
+            position: relative;
+            top: 35px;
         }    
     }
     &_title{
         width: 162px;
+        height: 65px;
         font-family: "Shrikhand", serif;
         margin: auto;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 10px;
     }
 }
