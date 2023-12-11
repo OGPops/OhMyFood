@@ -11,7 +11,7 @@
             margin:auto;
         }
         @include desktop{
-            width: 85%;
+            width: 87%;
         }
       
     }
@@ -28,7 +28,7 @@
             width: 85%;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-column-gap: 100px;
+            grid-column-gap: 90px;
             grid-row-gap: 50px;
         
         }    
@@ -42,6 +42,9 @@
         position: relative;
         @include mobile-L{
             height: 18.75rem;
+        }
+        @include desktop{
+            height: 15.625rem;
         }   
     }
     &_img{
