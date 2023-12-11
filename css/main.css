@@ -203,18 +203,11 @@ body {
 .header_arrow {
   position: relative;
   top: 40px;
-  position: relative;
-  top: 40px;
   padding-left: 25px;
-  font-size: 20px;
   font-size: 20px;
 }
 @media screen and (min-width: 1024px) {
   .header_arrow {
-    display: flex;
-    font-size: 15px;
-    position: relative;
-    top: 35px;
     display: flex;
     font-size: 15px;
     position: relative;
@@ -224,10 +217,8 @@ body {
 .header_title {
   width: 162px;
   height: 65px;
-  height: 65px;
   font-family: "Shrikhand", serif;
   margin: auto;
-  padding-top: 10px;
   padding-top: 10px;
 }
 
@@ -518,7 +509,7 @@ body {
   }
 }
 .restaurants_container {
-  max-width: 87.5rem;
+  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 1.5rem;
@@ -531,11 +522,11 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .restaurants_container {
-    width: 90%;
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+    grid-column-gap: 100px;
+    grid: row gap 50px;
   }
 }
 .restaurants_info-container {
@@ -617,16 +608,6 @@ body {
 .footer_list {
   margin-right: 0px;
 }
-@media screen and (min-width: 1024px) {
-  .footer {
-    display: flex;
-    flex-direction: row-reverse;
-    padding-right: 40px;
-  }
-}
-.footer_list {
-  margin-right: 0px;
-}
 .footer_element {
   font-family: "Roboto", sans-serif;
   padding: 2px;
@@ -639,9 +620,6 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .footer_element {
-    display: inline;
-    margin-right: 50px;
-    font-size: 12px;
     display: inline;
     margin-right: 50px;
     font-size: 12px;
@@ -661,7 +639,6 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .footer_logo {
-    font-size: 14px;
     font-size: 14px;
   }
 }
