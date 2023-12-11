@@ -353,7 +353,7 @@ body {
 }
 .operation {
   max-width: 100%;
-  padding: 50px;
+  padding: 20px;
 }
 @media screen and (min-width: 768px) {
   .operation {
@@ -363,7 +363,6 @@ body {
 @media screen and (min-width: 1024px) {
   .operation {
     width: 90%;
-    padding: 25px;
     margin: auto;
   }
 }
@@ -427,7 +426,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .restaurants_title {
-    width: 85%;
+    width: 87%;
   }
 }
 .restaurants_container {
@@ -447,7 +446,7 @@ body {
     width: 85%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 100px;
+    grid-column-gap: 90px;
     grid-row-gap: 50px;
   }
 }
@@ -462,6 +461,11 @@ body {
 @media screen and (min-width: 500px) {
   .restaurants_info-container {
     height: 18.75rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants_info-container {
+    height: 15.625rem;
   }
 }
 .restaurants_img {
