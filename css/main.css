@@ -496,6 +496,7 @@ body {
 .restaurants_title {
   max-width: 100%;
   padding-bottom: 25px;
+  margin: auto;
 }
 @media screen and (min-width: 768px) {
   .restaurants_title {
@@ -522,11 +523,11 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .restaurants_container {
-    width: 70%;
+    width: 85%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 100px;
-    grid: row gap 50px;
+    grid-row-gap: 50px;
   }
 }
 .restaurants_info-container {
