@@ -24,7 +24,7 @@
             margin:auto;
         }
         @include desktop {
-            width: 70%;
+            width: 85%;
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-column-gap:100px;
