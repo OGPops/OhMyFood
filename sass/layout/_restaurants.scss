@@ -12,6 +12,7 @@
         }
         @include desktop{
             width: 87%;
+            margin: auto;
         }
       
     }
@@ -74,7 +75,7 @@
     
     &_info{
         width: 100%;
-        padding: $padding;
+        padding: 15px;
         display:grid;
         grid-template-columns: 2fr 1fr;
         & p {
