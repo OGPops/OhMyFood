@@ -19,6 +19,24 @@
 
 // heart
 
+@keyframes Heart {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes Heart2 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 @mixin heart {
     position: relative;
     justify-self: end;
@@ -26,55 +44,37 @@
     cursor: pointer;
   
     &::after {
-      content: "♥";
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      color: red;
+      color: transparent;
       opacity: 0;
-      animation: Heart2 1s backwards; /* Animation pour le cœur vide au début */
-      transition: color 0.5s ease, opacity 1s ease; /* Transitions pour la couleur et l'opacité */
+      animation: Heart2 1.5s backwards;
+      transition: color 1s ease, opacity 1.5s ease;
       z-index: -1;
     }
   
     &:hover::after {
-      opacity: 1; /* Au survol, le cœur devient visible */
-      color: white; /* La couleur du cœur devient blanche */
-      animation: Heart 1s forwards; /* Animation pour remplir le cœur */
+      opacity: 1;
+      color: white;
+      animation: Heart 1s forwards;
     }
   
     &:not(:hover)::after {
-      opacity: 0; /* Au non-survol, le cœur est invisible */
-      color: red; /* La couleur revient à rouge instantanément */
+      opacity: 0;
+      color: transparent;
     }
   
     &:hover {
-      transition: color 0.5s ease; /* Transition de la couleur du texte */
+      transition: color 1s ease; 
       font-weight: bold;
-      color: transparent; /* Cœur devenant transparent au survol */
+      color: transparent;
       background: radial-gradient(#9256dc, #ff7ad9);
       background-clip: text;
       -webkit-background-clip: text;
-    }
-  
-    @keyframes Heart {
-      0% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-  
-    @keyframes Heart2 {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
     }
   }
 
