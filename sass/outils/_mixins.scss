@@ -19,50 +19,64 @@
 
 // heart
 
-@keyframes heart {
-    0% {
-        opacity: 0;
-    }
-    1% {
-        opacity: 0;
-        font-weight: bold;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes heart2 {
-    100% {
-        opacity: 1;
-    }
-    1% {
-        opacity: 0;
-        font-weight: lighter;
-    }
-    0% {
-        opacity: 0;
-    }
-}
-
 @mixin heart {
     position: relative;
     justify-self: end;
     font-size: 1.8rem;
+    cursor: pointer;
+  
+    &::after {
+      content: "♥";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: red;
+      opacity: 0;
+      animation: Heart2 1s backwards; /* Animation pour le cœur vide au début */
+      transition: color 0.5s ease, opacity 1s ease; /* Transitions pour la couleur et l'opacité */
+      z-index: -1;
+    }
+  
+    &:hover::after {
+      opacity: 1; /* Au survol, le cœur devient visible */
+      color: white; /* La couleur du cœur devient blanche */
+      animation: Heart 1s forwards; /* Animation pour remplir le cœur */
+    }
+  
+    &:not(:hover)::after {
+      opacity: 0; /* Au non-survol, le cœur est invisible */
+      color: red; /* La couleur revient à rouge instantanément */
+    }
+  
     &:hover {
-        animation: heart 1s forwards;
-        font-weight: bold;
-        color: transparent;
-        background: radial-gradient(#9256dc, #ff7ad9);
-        background-clip: text;
-        -webkit-background-clip: text;
-        cursor: pointer;
+      transition: color 0.5s ease; /* Transition de la couleur du texte */
+      font-weight: bold;
+      color: transparent; /* Cœur devenant transparent au survol */
+      background: radial-gradient(#9256dc, #ff7ad9);
+      background-clip: text;
+      -webkit-background-clip: text;
     }
-    &:not(:hover) {
-        animation: heart2 1s forwards;
+  
+    @keyframes Heart {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
     }
-}
-
+  
+    @keyframes Heart2 {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
 
 // Breakpoints media querys
 
