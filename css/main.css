@@ -1,25 +1,21 @@
-@keyframes heart {
+@keyframes Heart {
   0% {
-    opacity: 0;
-  }
-  1% {
-    opacity: 0;
-    font-weight: bold;
-  }
-  100% {
     opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
   }
 }
-@keyframes heart2 {
-  100% {
-    opacity: 1;
-  }
-  1% {
-    opacity: 0;
-    font-weight: lighter;
-  }
+@keyframes Heart2 {
   0% {
     opacity: 0;
+    transform: scale(1);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1.2);
   }
 }
 * {
@@ -194,18 +190,34 @@ body {
   position: relative;
   justify-self: end;
   font-size: 1.8rem;
+  cursor: pointer;
+}
+.fa-heart::after {
+  position: absolute;
+  color: transparent;
+  opacity: 0;
+  transition: color 1s ease, opacity 1s ease;
+  z-index: -1;
+  animation: Heart2 1.5s forwards;
+}
+.fa-heart:hover::after {
+  opacity: 1;
+  color: transparent;
+  transform: scale(1.5);
+}
+.fa-heart:not(:hover)::after {
+  opacity: 0.5;
+  color: transparent;
+  transform: scale(1);
 }
 .fa-heart:hover {
-  animation: heart 1s forwards;
+  transition: color 0.5s ease;
   font-weight: bold;
-  color: transparent;
   background: radial-gradient(#9256dc, #ff7ad9);
   background-clip: text;
   -webkit-background-clip: text;
-  cursor: pointer;
-}
-.fa-heart:not(:hover) {
-  animation: heart2 1s forwards;
+  color: transparent;
+  animation: Heart 1.5s forwards;
 }
 
 .header_arrow {
@@ -336,20 +348,36 @@ body {
   position: relative;
   justify-self: end;
   font-size: 1.8rem;
+  cursor: pointer;
   align-self: center;
   justify-self: center;
 }
-.menu-card_icon:hover {
-  animation: heart 1s forwards;
-  font-weight: bold;
+.menu-card_icon::after {
+  position: absolute;
   color: transparent;
+  opacity: 0;
+  transition: color 1s ease, opacity 1s ease;
+  z-index: -1;
+  animation: Heart2 1.5s forwards;
+}
+.menu-card_icon:hover::after {
+  opacity: 1;
+  color: transparent;
+  transform: scale(1.5);
+}
+.menu-card_icon:not(:hover)::after {
+  opacity: 0.5;
+  color: transparent;
+  transform: scale(1);
+}
+.menu-card_icon:hover {
+  transition: color 0.5s ease;
+  font-weight: bold;
   background: radial-gradient(#9256dc, #ff7ad9);
   background-clip: text;
   -webkit-background-clip: text;
-  cursor: pointer;
-}
-.menu-card_icon:not(:hover) {
-  animation: heart2 1s forwards;
+  color: transparent;
+  animation: Heart 1.5s forwards;
 }
 .menu-card_subcontainer {
   display: grid;
@@ -522,7 +550,6 @@ body {
 }
 .operation_step:hover .fas {
   color: #9256dc;
-  cursor: pointer;
 }
 
 .restaurants {
@@ -623,18 +650,34 @@ body {
   position: relative;
   justify-self: end;
   font-size: 1.8rem;
+  cursor: pointer;
+}
+.restaurants_icon::after {
+  position: absolute;
+  color: transparent;
+  opacity: 0;
+  transition: color 1s ease, opacity 1s ease;
+  z-index: -1;
+  animation: Heart2 1.5s forwards;
+}
+.restaurants_icon:hover::after {
+  opacity: 1;
+  color: transparent;
+  transform: scale(1.5);
+}
+.restaurants_icon:not(:hover)::after {
+  opacity: 0.5;
+  color: transparent;
+  transform: scale(1);
 }
 .restaurants_icon:hover {
-  animation: heart 1s forwards;
+  transition: color 0.5s ease;
   font-weight: bold;
-  color: transparent;
   background: radial-gradient(#9256dc, #ff7ad9);
   background-clip: text;
   -webkit-background-clip: text;
-  cursor: pointer;
-}
-.restaurants_icon:not(:hover) {
-  animation: heart2 1s forwards;
+  color: transparent;
+  animation: Heart 1.5s forwards;
 }
 
 .footer {
