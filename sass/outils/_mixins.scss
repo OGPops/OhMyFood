@@ -52,15 +52,15 @@
       height: 100%;
       color: transparent;
       opacity: 0;
-      animation: Heart2 1.5s backwards;
-      transition: color 1s ease, opacity 1.5s ease;
+      animation: Heart2 2.5s backwards;
+      transition: color 2s ease, opacity 2s ease;
       z-index: -1;
     }
   
     &:hover::after {
       opacity: 1;
       color: white;
-      animation: Heart 1s forwards;
+      animation: Heart 2s forwards;
     }
   
     &:not(:hover)::after {
@@ -69,7 +69,7 @@
     }
   
     &:hover {
-      transition: color 1s ease; 
+      transition: color 2s ease; 
       font-weight: bold;
       color: transparent;
       background: radial-gradient(#9256dc, #ff7ad9);
