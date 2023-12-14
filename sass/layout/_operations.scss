@@ -30,6 +30,7 @@
         box-shadow: $shadow-step;
         font-weight: 500;
         counter-increment: compteur;
+        cursor: pointer;
       
         &::before{
             margin-left: -0.625rem;
@@ -47,7 +48,6 @@
         }
         &:hover .fas{
             color: $color-primary;
-            cursor: pointer;
         }
         }
     }
