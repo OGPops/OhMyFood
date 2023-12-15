@@ -25,8 +25,6 @@
     font-size: 1.8rem;
     overflow: hidden;
     cursor: pointer;
-    transition: transform 400ms, background-color 250ms, color 250ms;
-    transition-delay: 0, 150ms, 150ms;
   
     &:hover::after {
       position: absolute;
@@ -47,7 +45,7 @@
     }
 
     &:not(:hover) {
-        transition: transform 1s, color 1s, background-image 1s,;
+        transition: transform 1s, color 1s, background-image 1s;
         background-image: radial-gradient(#9256dc 0%, #ff7ad9 0%);
         font-weight: normal;
         background-clip: text;
