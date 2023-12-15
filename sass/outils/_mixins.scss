@@ -44,12 +44,10 @@
       -webkit-background-clip: text;
       color: transparent;
       transform: scale(1.15);
-      background-size: 100% 100%;
     }
 
     &:not(:hover) {
-        transition: transform 1s, color 1s, background-size 1s,;
-        background-size: 0% 0%;
+        transition: transform 1s, color 1s, background-image 1s,;
         background-image: radial-gradient(#9256dc 0%, #ff7ad9 0%);
         font-weight: normal;
         background-clip: text;
