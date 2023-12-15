@@ -23,32 +23,37 @@
     position: relative;
     justify-self: end;
     font-size: 1.8rem;
+    overflow: hidden;
     cursor: pointer;
-    transition: transform 450ms, background-color 300ms;
-    transition-delay: 0, 150ms;
+    transition: transform 400ms, background-color 250ms, color 250ms;
+    transition-delay: 0, 150ms, 150ms;
   
     &:hover::after {
       position: absolute;
+      content: "";
       color: transparent;
       opacity: 0;
       z-index: -1;
     }
 
     &:hover {
-      transition: color 1s ease;
+      transition: color 0.5s ease;
       font-weight: bold;
       background: radial-gradient(#9256dc, #ff7ad9);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
       transform: scale(1.15);
+      background-size: 100% 100%;
     }
 
     &:not(:hover) {
-        transition: color 2s ease;
+        transition: transform 1s, color 1s, background-size 1s,;
+        background-size: 0% 0%;
+        background-image: radial-gradient(#9256dc 0%, #ff7ad9 0%);
         font-weight: normal;
-        background: none;
-        color: initial;
+        background-clip: text;
+      -webkit-background-clip: text;
         transform: scale(1);
       }
   }
