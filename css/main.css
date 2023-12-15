@@ -172,8 +172,6 @@ body {
   font-size: 1.8rem;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 400ms, background-color 250ms, color 250ms;
-  transition-delay: 0, 150ms, 150ms;
 }
 .fa-heart:hover::after {
   position: absolute;
@@ -181,6 +179,7 @@ body {
   color: transparent;
   opacity: 0;
   z-index: -1;
+  transition: transform 1s ease-out;
 }
 .fa-heart:hover {
   transition: color 0.5s ease;
@@ -330,8 +329,6 @@ body {
   font-size: 1.8rem;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 400ms, background-color 250ms, color 250ms;
-  transition-delay: 0, 150ms, 150ms;
   align-self: center;
   justify-self: center;
 }
@@ -341,6 +338,7 @@ body {
   color: transparent;
   opacity: 0;
   z-index: -1;
+  transition: transform 1s ease-out;
 }
 .menu-card_icon:hover {
   transition: color 0.5s ease;
@@ -632,8 +630,6 @@ body {
   font-size: 1.8rem;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 400ms, background-color 250ms, color 250ms;
-  transition-delay: 0, 150ms, 150ms;
 }
 .restaurants_icon:hover::after {
   position: absolute;
@@ -641,6 +637,7 @@ body {
   color: transparent;
   opacity: 0;
   z-index: -1;
+  transition: transform 1s ease-out;
 }
 .restaurants_icon:hover {
   transition: color 0.5s ease;
